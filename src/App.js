@@ -43,7 +43,7 @@ const App = () => {
       
       <div className="bg-gradient-to-t from-emerald-500 to-emerald-900 py-10">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl text-center text-white font-semibold mb-4">Search Image</h1>
+          <h1 className="text-3xl text-center text-white font-semibold mb-4">Image Gallery</h1>
           <SearchBar onSearch={searchImages} />
         </div>
       </div>

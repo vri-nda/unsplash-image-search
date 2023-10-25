@@ -44,14 +44,14 @@ return (
     <div className={`random-images-container grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-10 mx-auto gap-4 ${searchPerformed ? 'hidden' : ''}`}>
       {randomImages.map((image) => (
         <div key={image.id} className="bg-gradient-to-b from-teal-400 to-yellow-200 rounded-lg shadow-md p-4" onClick={() => handleImageClick(image)}>
-          <img src={image.urls.small} alt={image.alt_description} className="w-full h-auto rounded-lg" />
+          <img src={image.urls.small} alt={image.alt_description} className="w-full rounded-lg p-0 m-0 max-h-[200px]" />
           <div className="mt-4">
             <div className="text-gray-800 font-bold">
               <a href={`https://www.instagram.com/${image.user.instagram_username}`} target="_blank" rel="noopener noreferrer">
                 {image.user.name}
               </a>
             </div>
-            <div className="flex items-center mt-2">
+            <div className="flex items-center">
               <img src="https://img.icons8.com/?size=128&id=4T5VAk5CB92r&format=png" alt="Heart" className="w-6 h-6 mr-2 text-red-500" />
               <span className="text-gray-600">
                 {image.likes} Likes
